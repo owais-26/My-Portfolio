@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+html::-webkit-scrollbar {
+  width: 18px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: black;
+  /* border-radius: 50px; */
+  
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: lightblue;
+  border-radius: 100px;
+}
+
+body {
+  width: 100%;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+.logo {
+  margin: 10px 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Navigation Bar */
+#navbar {
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  position: fixed; 
+  left: 0;
+  width: 100%; 
+  height: 50px; 
+  background-color: rgb(0, 0, 139);
+}
+
+#navbar ul {
+  display: flex;
+  font-family: "poppins";
+}
+
+
+
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 10px 35px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+body::before {
+  background: url(bg8.jpg) no-repeat center center/cover;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  opacity: 1;
+}
+.head {
+  padding: 0px 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#top1 {
+  background: transparent;
+  color: white;
+  font-size: 32px;
+  border: 2px blue solid;
+  border-radius: 50%;
+  padding: 15px;
+  position: absolute;
+  top: -10px;
+  left: 0px;  
+}
+.img1 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+ top: 30%;
+ right: 100px;
+ border: 2px solid blue;
+ padding: 10px;
+}
+.image{
+  margin: auto;
+}
+
+.home{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    
+}
+h3,h1,p,span{
+    font-family:'Josefin Sans' ;
+}
+h3{
+    color: rgb(4, 0, 255);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+h1{
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    font-size: 36px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.input{
+    color: #e5ff00;
+    font-weight: 1000;
+    font-family:'Source Serif Pro';
+    font-size: 40px;
+    font-stretch: expanded;
+}
+p{
+    color: white;
+    font-size: 20px;
+}
+.intro{
+    /* position: absolute;
+    top:30%;
+    left:12%; */
+    margin: auto;
+    margin-left: 150px;
+    width: 100%;
+    /* width: 580px; */
+}
+.about{
+  /* margin-top: 50px; */
+  height: 100vh;
+}
+
+.abt{
+  text-align: center;
+  font-size: 40px;
+  margin-top: -20px;
+  margin-bottom: 0px;
+
+
+}
+.me{
+  color: #e5ff00;
+  font-weight: 1000;
+  font-family:'Source Serif Pro';
+  font-size: 40px;
+  font-stretch: expanded;
+
+}
+.title{
+  color: white;
+  font-size: 28px;
+
+  
+
+}
+.inf{
+  color: #e5ff00;
+  font-size: 28px;
+
+
+}
+.info{
+  padding-left: 300px;
+  padding-top: 40px;
+  margin-bottom: 50px;
+  font-weight: bolder;
+
+}
+
+#icon{
+  background: transparent;
+  color: white;
+  font-size: 80px;
+  border: 2px blue solid;
+  border-radius: 100%;
+  padding: 25px;
+  margin-bottom: 10px;
+  /* width: 170px; */
+  /* height: 10px; */
+  /* object-fit: contain; */
+
+
+
+}
+/* #icon:hover {
+  color: black;
+  background-color: white;
+} */
+.icons{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    /* justify-content: center; */
+    /* border: 2px double blue; */
+    border-radius: 100px;
+    padding-left: 10px;
+    padding-top: 10px; 
+    /* margin-bottom: 10px; */
+    height: 280px;
+
+}
+.item{
+
+  /* display: flex; */
+  align-items: center;
+  /* justify-content: space-around; */
+  /* margin: auto; */
+  /* margin-top: 30px;
+  margin-bottom: -20px; */
+}
+.sub{
+  color: #e5ff00;
+  font-size: 24px;
+  /* margin-left: 30px; */
+  display: flex;
+  padding-top: 0px;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  /* margin-left: 10px; */
+  text-align: center;
+  width: 154px;
+
+} 
+.abc{
+  width: 167px;
+}
+#education{
+  /* margin-top: 50px; */
+  height: 100vh;
+  /* margin-left:100px; */
+
+}
+
+.eduhead{
+  color: rgb(217, 255, 0);
+  font-weight: 1000;
+  font-size: 24px;
+  /* margin-bottom: 10px; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.edupara{
+  font-size: 20px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+}
+#edu{
+  display: grid;
+  grid-template-columns: 1fr 
+}
+.education{
+  margin-left: 80px;
+    /* margin-right: 16px; */
+    /* margin-top: 10px; */
+}
+.edumain{
+  height: 100vh;
+  /* margin-top: 50px; */
+}
+#top{
+  background: transparent;
+  color: white;
+  font-size: 32px;
+ 
+  padding: 15px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+ 
+  /* margin-right: 30px;
+  margin-left: 10px;
+  margin-top: -100px; */
+  
+}
+.proj{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  margin-top: 50px;
+}
+.projhead{
+  height: 100vh;
+  margin-top: -30px;
+}
+.img2{
+  display: flex;
+  /* justify-content: space-between; */
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  opacity: 1;
+ 
+}
+.sub1{
+  color: #e5ff00;
+  font-size: 28px;
+  /* margin-left: 30px; */
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  /* margin-left: 10px; */
+  text-align: center;
+  /* width: 154px; */
+  margin-bottom: 30px;
+
+}
+a{
+  text-decoration: none;
+}
+.img2:hover{
+  transition: all;
+  opacity: 1;
+  border: 2px solid blue;
+  width: 180px;
+  height: 180px;
+  
+
+} 
+.proj2{
+  display: grid;
+  grid-template-columns: 1fr 1fr  1fr;
+  margin: auto;
+}
+#social{
+  background: transparent;
+  color: white;
+  font-size: 88px;
+  border: 2px blue solid;
+  border-radius: 100%;
+  padding: 25px;
+  margin-bottom: 10px;
+  /* width: 142px; */
+
+}
+#social:hover {
+  color: black;
+  background-color: white;
+}
+.sm{
+  width: 142px;
+}
+
+#about {
+  height: 80px;
+  width: 100%;
+}
+#yahanedu{
+  display: flex;
+  width: 100%;
+  height: 70px;
+}
+
+
+
+
